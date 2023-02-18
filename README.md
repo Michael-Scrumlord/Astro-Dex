@@ -1,10 +1,11 @@
 To run the app:
 
-Clone your repository
-Open Terminal and cd to the cloned repository's directory
-Run "npm -i"
-ng serve
-Open your browser to http://localhost:3000
+1. Clone the repository
+2. Open Terminal and cd to the cloned repository's directory
+3. Run "npm -i"
+4. ng serve
+5. Open your browser to http://localhost:3000
+
 // Side note, I haven't tested this whatsover. Maybe it'll work, I don't know.
 
 
