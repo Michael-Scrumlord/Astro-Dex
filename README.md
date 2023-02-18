@@ -1,3 +1,18 @@
+To run the app:
+
+Clone your repository
+Open Terminal and cd to the cloned repository's directory
+Run "npm -i"
+ng serve
+Open your browser to http://localhost:3000
+// Side note, I haven't tested this whatsover. Maybe it'll work, I don't know.
+
+
+General template stuff below:
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
