@@ -1,0 +1,17 @@
+body{
+    height: 100%;
+    background-color:#000000;
+  }
+
+.CollapseMenu{
+  width: 50vw;
+  height: 10vh;
+  text-align: center;
+  color: white;
+  /*display:none;
+  overflow: hidden;*/
+}
+
+.active, .Collapsible:hover{
+  background-color: #ccc;
+}
