@@ -31,7 +31,7 @@ export function Model(props) {
       break;
     case 'Jupiter':
       text = <group {...props} dispose={null} scale={.0095}>
-      <mesh geometry={nodes.cubemap.geometry} material={materials.None} />
+      <mesh ref={myMesh} geometry={nodes.cubemap.geometry} material={materials.None} />
     </group>;
       break;
     case 'Mercury':
