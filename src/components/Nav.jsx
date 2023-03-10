@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 // Navigation Bar - using bootstrap
 
 export default function Nav() {
@@ -11,8 +11,8 @@ export default function Nav() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav ml-auto">
-                <a className="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a className="nav-item nav-link" href="#">Catalog</a>
+                <a className="nav-item nav-link" href="/"><Link to="/"/>Home</a>
+                <a className="nav-item nav-link" href="/Catalog"><Link to="/Catalog"/>Catalog</a>
                 <a className="nav-item nav-link" href="#">Trivia</a>
                 </div>
             </div>

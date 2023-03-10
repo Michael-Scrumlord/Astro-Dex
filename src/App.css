@@ -1,11 +1,47 @@
 
 body{
   background-color:#000000;
-  margin: 10px;
 }
 
-.navig {
+.HomeView{
+  height: 900px;
   width: 100%;
+}
+
+.HomeViewText {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  pointer-events: none;
+  width: 100%;
+  height: 100%; 
+}
+
+.HomeViewText .TextContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  text-align: center;
+}
+
+.Title {
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  letter-spacing: -0.05em;
+
+  background: linear-gradient(20deg, #113989, #ffe853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  letter-spacing: -0.05em;
+  color: rgb(192, 192, 192);
 }
 
 .CatalogContainer{
@@ -18,37 +54,40 @@ body{
 
 .PlanetContainer {
   border-collapse: separate; 
-  width: 85%;
+  width: 100%;
   height: 100%;
   flex: right;
-  
+
 }
 
 .Sidebar {
-  height: 100%;
-  width: 15%;
-  background-color: #1a1818;
+  position: absolute;
+  z-index: 9;
+  height: 70%;
+  width: 200px;
+  margin: 15px;
   flex: left;
+  opacity: 0.8;
 }
 
 .SidebarList {
   height: 100%;
-  padding: 5px;
+  padding: 8px;
   border-radius: 10px;
-  background-color: #282c34;
+  background-color: #111112;
 }
 
 .SidebarList .row {
   width: 100%;
   height: 50px;
-  background-color: gray;
-  border: 1px, solid, #282c34;
+  background-color: rgb(68, 68, 68);
+  border: 1px, solid;
   border-radius: 10px;
   margin: 0;
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
-  color: azure;
+  color: rgb(232, 232, 232);
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
@@ -56,7 +95,23 @@ body{
 
 .SidebarList .row:hover {
   cursor: pointer;
-  background-color: #282c34;
-  border: 5px grey;
+  background-color:  #111112;
+  border: 2px solid rgb(68, 68, 68);
   padding: 10px;
+}
+
+.SearchBar {
+    margin-bottom: 25px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+}
+
+.SearchBar .Input {
+	height:  100%;
+  font-family: 'Lato', sans-serif;
+  border: 0;
+  color: #2f2f2f;
+  border-radius: .7rem;
+  padding: 5px;
 }

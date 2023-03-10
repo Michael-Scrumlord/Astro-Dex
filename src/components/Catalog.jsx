@@ -5,6 +5,7 @@ import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei";
 import { Model } from './Model';
 import Stars from './Stars.jsx';
+import SearchBar from './SearchBar.jsx';
 
 // This renders the catalog, side bar and planet 3D object. will need to seperate Sidebar and Planet into 2 components and create a "Catalog View"
 
@@ -16,7 +17,7 @@ export default function Catalog() {
         <div className='CatalogContainer'>
             <div className='Sidebar'>
                 <ul className='SidebarList'>
-                    
+                <SearchBar />
                     {PlanetData.map((val, key) => {
                         return <li key={key} className='row' onClick={() => setPlanets({name: val.title, link: val.link})}><div>{val.title}</div></li>;
                     })}
