@@ -1,13 +1,13 @@
 
 import './App.css';
 import Nav from './components/Nav';
-import Sidebar from './components/Sidebar';
+import Catalog from './components/Catalog';
 
 function App() {
   return (
     <div>
       <Nav />
-      <Sidebar />
+      <Catalog />
     </div>
   );
 }

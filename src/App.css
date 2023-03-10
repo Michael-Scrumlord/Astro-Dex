@@ -9,7 +9,7 @@ body{
 }
 
 .CatalogContainer{
-  border: 5px, solid gray;
+  border-collapse: separate; 
   border-radius: 10px;
   display: flex;
   height: 900px;
@@ -17,24 +17,25 @@ body{
 }
 
 .PlanetContainer {
+  border-collapse: separate; 
   width: 85%;
   height: 100%;
   flex: right;
+  
 }
 
 .Sidebar {
   height: 100%;
   width: 15%;
-  border-radius: 10px;
-  background-color: #282c34;
+  background-color: #1a1818;
   flex: left;
 }
 
 .SidebarList {
   height: 100%;
   padding: 5px;
+  border-radius: 10px;
   background-color: #282c34;
-
 }
 
 .SidebarList .row {
@@ -43,7 +44,6 @@ body{
   background-color: gray;
   border: 1px, solid, #282c34;
   border-radius: 10px;
-  list-style-type: none;
   margin: 0;
   margin-bottom: 5px;
   display: flex;
@@ -54,14 +54,9 @@ body{
   font-family: sans-serif;
 }
 
-.SidebarList #active {
-  background-color: #282c34;
-  border: 1px, solid, grey;
-  border-radius: 10px;
-}
-
 .SidebarList .row:hover {
   cursor: pointer;
   background-color: #282c34;
-
+  border: 5px grey;
+  padding: 10px;
 }

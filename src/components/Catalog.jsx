@@ -8,7 +8,7 @@ import Stars from './Stars.jsx';
 
 // This renders the catalog, side bar and planet 3D object. will need to seperate Sidebar and Planet into 2 components and create a "Catalog View"
 
-export default function Sidebar() {
+export default function Catalog() {
     // using state to change the planets onClick
     const [planet, setPlanets] = useState({name: "Earth", link: "EarthClouds_1_12756.glb"})
 
@@ -26,9 +26,10 @@ export default function Sidebar() {
                 <Canvas
                 camera={{ fov: 35, zoom: 0.1, near: 1, far: 1000, position: [-6,0 ,0] }}
                 style={{
-                backgroundColor: '#020C1C',
+                backgroundColor: '#1b1b1c',
                 height: "100%",
-                width: "100%"
+                width: "100%",
+                borderRadius: "10px"
                 }}>
                     <Suspense fallback={null}>
                         <pointLight position={[-100,200,0]}/>
