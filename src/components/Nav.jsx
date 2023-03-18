@@ -14,6 +14,7 @@ export default function Nav() {
                 <a className="nav-item nav-link" href="/"><Link to="/"/>Home</a>
                 <a className="nav-item nav-link" href="/Catalog"><Link to="/Catalog"/>Catalog</a>
                 <a className="nav-item nav-link" href="#">Trivia</a>
+                <a className="nav-item nav-link" href="/Sources"><Link to="/Sources"/>Sources</a>
                 </div>
             </div>
         </nav>

@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import "../App.css";
-import "./CSS/sources.css";
+import "./sources.css";
 import Stars from "./Stars";
 
 export default function Sources() {
@@ -100,7 +100,7 @@ export default function Sources() {
 							src={require("./assets/Stock-Profile.jpeg")}
 							alt="default-pfp"
 						/>
-						<h2>Micheal Daza</h2>
+						<h2>Michael Daza</h2>
 						<ul>
 							<li>Scrum Master</li>
 							<li>EmailHere@whatever.com</li>

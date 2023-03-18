@@ -19,7 +19,7 @@ export default function Stars(props) {
     return (
         <group rotation={[0, 0, Math.PI / 4]}>
             <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
-                <PointMaterial transparent color="white" size={0.05} sizeAttenuation={true} depthWrite={false} />
+                <PointMaterial transparent color="white" size={0.1} sizeAttenuation={true} depthWrite={false} />
             </Points>
         </group>
     )
