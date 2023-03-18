@@ -25,7 +25,7 @@ export default function Catalog() {
             </div>
             <div className='PlanetContainer'>
                 <Canvas
-                camera={{ fov: 35, zoom: 0.1, near: 1, far: 1000, position: [-6,0 ,0] }}
+                camera={{ fov: 10, zoom: 0.06, near: 1, far: 900, position: [-6,0 ,0] }}
                 style={{
                 backgroundColor: '#1b1b1c',
                 height: "100%",
