@@ -1,64 +1,64 @@
-import React, { useState, Suspense } from "react";
-import { PlanetData } from "./PlanetData.js"; // contains planet dictionary, links and names
-import "../App.css";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import React, { Suspense, useState } from "react";
+import "../App.css";
 import { Model } from "./Model";
-//import Stars from "./Stars.jsx";
+import { PlanetData } from "./PlanetData.js"; // contains planet dictionary, links and names
 import SearchBar from "./SearchBar.jsx";
+import Stars from "./Stars.jsx";
 
 // This renders the catalog, side bar and planet 3D object. will need to seperate Sidebar and Planet into 2 components and create a "Catalog View"
 
 export default function Catalog() {
-  // using state to change the planets onClick
-  const [planet, setPlanets] = useState({
-    name: "Earth",
-    link: "EarthClouds_1_12756.glb",
-  });
+	// using state to change the planets onClick
+	const [planet, setPlanets] = useState({
+		name: "Earth",
+		link: "EarthClouds_1_12756.glb",
+	});
 
-  return (
-    <div className="CatalogContainer">
-      <div className="Sidebar">
-        <ul className="SidebarList">
-          <SearchBar />
-          {PlanetData.map((val, key) => {
-            return (
-              <li
-                key={key}
-                className="row"
-                onClick={() => setPlanets({ name: val.title, link: val.link })}
-              >
-                <div>{val.title}</div>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <div className="PlanetContainer">
-        <Canvas
-          camera={{
-            fov: 10,
-            zoom: 0.06,
-            near: 1,
-            far: 900,
-            position: [-6, 0, 0],
-          }}
-          style={{
-            backgroundColor: "#1b1b1c",
-            height: "100%",
-            width: "100%",
-            borderRadius: "10px",
-          }}
-        >
-          <Suspense fallback={null}>
-            <pointLight position={[-100, 200, 0]} />
-            <Model name={planet.name} link={planet.link} />
-          </Suspense>
-          <Stars />
-          <OrbitControls minDistance={7} maxDistance={15} />
-          <spotLight position={[10, 15, 10]} angle={0.3} />
-        </Canvas>
-      </div>
-    </div>
-  );
+	return (
+		<div className="CatalogContainer">
+			<div className="Sidebar">
+				<ul className="SidebarList">
+					<SearchBar />
+					{PlanetData.map((val, key) => {
+						return (
+							<li
+								key={key}
+								className="row"
+								onClick={() => setPlanets({ name: val.title, link: val.link })}
+							>
+								<div>{val.title}</div>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+			<div className="PlanetContainer">
+				<Canvas
+					camera={{
+						fov: 10,
+						zoom: 0.06,
+						near: 1,
+						far: 900,
+						position: [-6, 0, 0],
+					}}
+					style={{
+						backgroundColor: "#1b1b1c",
+						height: "100%",
+						width: "100%",
+						borderRadius: "10px",
+					}}
+				>
+					<Suspense fallback={null}>
+						<pointLight position={[-100, 200, 0]} />
+						<Model name={planet.name} link={planet.link} />
+					</Suspense>
+					<Stars />
+					<OrbitControls minDistance={7} maxDistance={15} />
+					<spotLight position={[10, 15, 10]} angle={0.3} />
+				</Canvas>
+			</div>
+		</div>
+	);
 }
