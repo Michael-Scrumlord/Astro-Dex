@@ -53,7 +53,7 @@ export function Model(props) {
       break;
     case 'Sun':
       text = <group {...props} dispose={null} scale={.0095}>
-      <mesh ref={myMesh} geometry={nodes.Cube001.geometry} material={materials.None} rotation={[Math.PI / 2, 0, 0]} scale={1000} />
+      <mesh ref={myMesh} geometry={nodes.Cube001.geometry} material={materials.None} scale={1000} />
       </group>;
       break;
     case 'Uranus':
