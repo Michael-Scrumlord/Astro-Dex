@@ -1,9 +1,9 @@
-
-body{
-  background-color:#000000;
+body {
+  background-color: #000000;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.HomeView{
+.HomeView {
   height: 900px;
   width: 100%;
 }
@@ -11,17 +11,17 @@ body{
 .HomeViewText {
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   pointer-events: none;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
 .HomeViewText .TextContainer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%, -50%, 0);
   text-align: center;
 }
 
@@ -44,8 +44,8 @@ body{
   color: rgb(192, 192, 192);
 }
 
-.CatalogContainer{
-  border-collapse: separate; 
+.CatalogContainer {
+  border-collapse: separate;
   border-radius: 10px;
   display: flex;
   height: 900px;
@@ -53,11 +53,10 @@ body{
 }
 
 .PlanetContainer {
-  border-collapse: separate; 
+  border-collapse: separate;
   width: 100%;
   height: 100%;
   flex: right;
-
 }
 
 .Sidebar {
@@ -95,23 +94,23 @@ body{
 
 .SidebarList .row:hover {
   cursor: pointer;
-  background-color:  #111112;
+  background-color: #111112;
   border: 2px solid rgb(68, 68, 68);
   padding: 10px;
 }
 
 .SearchBar {
-    margin-bottom: 25px;
-    height: 45px;
-    width: 100%;
-    display: flex;
+  margin-bottom: 25px;
+  height: 45px;
+  width: 100%;
+  display: flex;
 }
 
 .SearchBar .Input {
-	height:  100%;
-  font-family: 'Lato', sans-serif;
+  height: 100%;
+  font-family: "Lato", sans-serif;
   border: 0;
   color: #2f2f2f;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   padding: 5px;
 }

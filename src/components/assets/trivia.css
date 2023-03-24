@@ -1,0 +1,25 @@
+.TriviaContainer {
+  text-align: center;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.title-label {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  letter-spacing: -0.05em;
+
+  background: linear-gradient(20deg, #113989, #ffe853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.col {
+  margin-bottom: 20px;
+}
