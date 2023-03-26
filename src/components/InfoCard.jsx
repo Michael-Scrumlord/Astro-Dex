@@ -1,11 +1,14 @@
 import { Html } from "@react-three/drei";
 
-export default function InfoCard() {
+export default function InfoCard(props) {
   return (
-    <Html>
+    <Html position={props.position}>
       <div className="InfoCard">
-        <h2>Eart</h2>
-        <p >here is a lotta bs about this shitty planet because if a plancehas css in it then its def bs and bad to have so fuck off text goes here</p>
+        <h1>{props.title}</h1>
+        <h3>{props.subtitle}</h3>
+        <p>{props.detail}</p>
+        <br></br>
+        <p>{props.gravity_cmp}</p>
       </div>
     </Html>
   );

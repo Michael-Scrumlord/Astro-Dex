@@ -7,7 +7,7 @@ import Stars from "./Stars";
 //test
 export default function Sources() {
   return (
-    <div className="total-info navigation container-fluid">
+    <div className="total-info navigation container-fluid Sources">
       <Canvas
         id="canvas"
         camera={{

@@ -7,7 +7,7 @@ export default function Stars(props) {
   const rotate = props.rotate;
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.onSphere(new Float32Array(5000), { radius: 50 })
+    random.onSphere(new Float32Array(5000), { radius: 30 })
   );
   useFrame((state, delta) => {
     if (rotate == "on") {
