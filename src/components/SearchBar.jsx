@@ -16,13 +16,10 @@ export default function SearchBar({ planet, setFilteredData }) {
 
   return (
     <div>
-      <form className='SearchBar' role="search">
+      <form>
         <ul>
-          <input autoComplete='off' className='text' id="search" type="search" placeholder="Search..." onChange={handleFilter} autofocus required />
-
+          <input autoComplete='off' className='SearchBar' id="search" type="search" placeholder="Search..." onChange={handleFilter} autofocus required />
         </ul>
-
-
       </form>
     </div>
   )

@@ -3,6 +3,9 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+ul {
+  padding: 0; 
+}
 .HomeView {
   height: 900px;
   width: 100%;
