@@ -105,7 +105,7 @@ ul {
   font-weight: bold;
 }
 
-.SidebarList .row:hover {
+.SideBarRow:hover {
   cursor: pointer;
   background-color: #111112;
   border: 2px solid rgb(68, 68, 68);
@@ -120,7 +120,7 @@ ul {
     display: flex;
 }
 
-.SearchBar .Input {
+.SearchBar  .Input {
   height: 100%;
   width: 100%;
   border: 0;

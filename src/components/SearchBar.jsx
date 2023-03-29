@@ -5,7 +5,7 @@ export default function SearchBar({ planet, setFilteredData }) {
   const handleFilter = (event) => {
     const searchPlanet = event.target.value
     const newFilter = PlanetData.filter((value) => {
-      return value.title.toLowerCase().includes(searchPlanet.toLowerCase())
+      return value.title.toLowerCase().startsWith(searchPlanet.toLowerCase())
     });
 
     if (searchPlanet === "") {
@@ -15,12 +15,11 @@ export default function SearchBar({ planet, setFilteredData }) {
   };
 
   return (
-    <div>
-      <form>
+      <form className='SearchBar'>
         <ul>
-          <input autoComplete='off' className='SearchBar' id="search" type="search" placeholder="Search..." onChange={handleFilter} autofocus required />
+          <input autoComplete='off' className='Input' id="search" type="search" placeholder="Search..." onChange={handleFilter} autofocus required />
         </ul>
       </form>
-    </div>
+
   )
 }

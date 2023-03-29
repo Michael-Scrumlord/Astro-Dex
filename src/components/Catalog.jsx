@@ -26,7 +26,7 @@ export default function Catalog() {
     <div className='CatalogContainer'>
       <div className='Sidebar'>
         <ul className='SidebarList'>
-          <SearchBar className="SearchBar" planet="planet" setFilteredData={setFilteredData} />
+          <SearchBar planet="planet" setFilteredData={setFilteredData} />
           {filteredData.map((val, key) => {
             return <li key={key} className='SideBarRow' onClick={() => setPlanets({ name: val.title, link: val.link, desc: val.Description, slogan: val.slogan, gravity_cmp: val.surface_g_comp })}><div>{val.title}</div></li>;
           })}
