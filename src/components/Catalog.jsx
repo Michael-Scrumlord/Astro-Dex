@@ -17,7 +17,8 @@ export default function Catalog() {
     link: PlanetData[0]['link'],
     desc: PlanetData[0]['Description'],
     slogan: PlanetData[0]['slogan'],
-    gravity_cmp: PlanetData[0]['surface_g_comp']
+    gravity_cmp: PlanetData[0]['surface_g_comp'],
+    image: PlanetData[0]['image']
   });
 
   const [filteredData, setFilteredData] = useState(PlanetData);
@@ -28,24 +29,24 @@ export default function Catalog() {
         <ul className='SidebarList'>
           <SearchBar planet="planet" setFilteredData={setFilteredData} />
           {filteredData.map((val, key) => {
-            return <li key={key} className='SideBarRow' onClick={() => setPlanets({ name: val.title, link: val.link, desc: val.Description, slogan: val.slogan, gravity_cmp: val.surface_g_comp })}><div>{val.title}</div></li>;
+            return <li key={key} className='SideBarRow' onClick={() => setPlanets({ name: val.title, link: val.link, desc: val.Description, slogan: val.slogan, gravity_cmp: val.surface_g_comp, image: val.image })}><div>{val.title}</div></li>;
           })}
         </ul>
       </div>
       <div className='PlanetContainer'>
         <Canvas
-          camera={{ fov: 35, zoom: 0.1, near: 1, far: 1000, position: [-6, 0, 0] }}
+          camera={{ fov: 10, zoom: 0.08, near: 1, far: 1000, position: [-6, 0, 0] }}
           style={{
             position: "absolute",
             backgroundColor: '#1b1b1c',
-            height: "100%",
+            height: "93.74%", //Just to offset the height of the navbar (40px)
             width: "100%",
             borderRadius: "10px"
           }}>
           <Suspense fallback={null}>
             <pointLight position={[-100, 200, 0]} />
             <Model name={planet.name} link={planet.link} />
-            <InfoCard title={planet.name} subtitle={planet.slogan} detail={planet.desc} gravity_cmp={planet.gravity_cmp} position={[0, -4, 8]} />
+            <InfoCard title={planet.name} subtitle={planet.slogan} detail={planet.desc} gravity_cmp={planet.gravity_cmp} image={planet.image} />
           </Suspense>
           <Stars />
           <OrbitControls minDistance={7} maxDistance={15} />

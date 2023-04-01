@@ -13,7 +13,9 @@ export const PlanetData = [
         density: "5.513",
         volume: "1,083,206,916,846",
         surface_g: "9.80665",
-        surface_g_comp: "Earth Gravity is 9.80665 G"
+        surface_g_comp: "Earth Gravity is 9.80665 G",
+        image: "Earth.jpg"
+
     },
     {
         title: "Mars",
@@ -28,7 +30,8 @@ export const PlanetData = [
         density: "3.934",
         volume: "163,115,609,799",
         surface_g: "3.71",
-        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 38 pounds on Mars."
+        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 38 pounds on Mars.",
+        image: "Mars.png"
     },
     {
         title: "Jupiter",
@@ -43,7 +46,8 @@ export const PlanetData = [
         density: "1.326",
         volume: "1,431,281,810,739,360",
         surface_g: "24.79",
-        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 253 pounds on Jupiter."
+        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 253 pounds on Jupiter.",
+        image: "Jupiter.jpg"
     },
     {
         title: "Mercury",
@@ -58,7 +62,8 @@ export const PlanetData = [
         density: "5.427",
         volume: "60,827,208,742",
         surface_g: "3.7",
-        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 38 pounds on Mercury."
+        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 38 pounds on Mercury.",
+        image: "Mercury.jpg"
     },
     {
         title: "Neptune",
@@ -73,7 +78,8 @@ export const PlanetData = [
         density: "1.638",
         volume: "62,525,703,987,421",
         surface_g: "11.15",
-        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 114 pounds on Neptune."
+        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 114 pounds on Neptune.",
+        image: "Neptune.jpg"
     },
     {
         title: "Saturn",
@@ -88,7 +94,8 @@ export const PlanetData = [
         density: "0.687",
         volume: "827,129,915,150,897",
         surface_g: "10.4*",
-        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh about 107 pounds on Saturn (at the equator). *Derived from a 1 bar radius of 60,268 km."
+        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh about 107 pounds on Saturn (at the equator). *Derived from a 1 bar radius of 60,268 km.",
+        image: "Saturn.jpg"
     },
     {
         title: "Sun",
@@ -103,7 +110,8 @@ export const PlanetData = [
         density: "",
         volume: "",
         surface_g: "",
-        surface_g_comp: ""
+        surface_g_comp: "",
+        image: "Sun.jpg"
         
     },
     {
@@ -119,7 +127,8 @@ export const PlanetData = [
         density: "1.270",
         volume: "68,334,355,695,584",
         surface_g: "8.87",
-        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 91 pounds on Uranus."
+        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 91 pounds on Uranus.",
+        image: "Uranus.jpg"
     },
     {
         title: "Venus",
@@ -134,6 +143,7 @@ export const PlanetData = [
         density: "5.243",
         volume: "928,415,345,893",
         surface_g: "8.87",
-        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 91 pounds on Venus."
+        surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 91 pounds on Venus.",
+        image: "Venus.jpg"
     }
 ];
