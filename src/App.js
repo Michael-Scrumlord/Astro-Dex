@@ -5,6 +5,7 @@ import HomeView from "./components/HomeView";
 import Nav from "./components/Nav";
 import Sources from "./components/Sources";
 import Trivia from "./components/Trivia";
+import QuizTest from "./components/Quizes/Quiz-Test";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Catalog" element={<Catalog />} />
         <Route path="/Sources" element={<Sources />} />
         <Route path="/Trivia" element={<Trivia />} />
+        <Route path="/QuizTest" element={<QuizTest />} />
       </Routes>
     </div>
   );
