@@ -22,7 +22,7 @@ export default function InfoCard(props) {
   }
 
   return (
-    <Html>
+    <Html position={props.position}>
       <div className="InfoCard" id="infoCard">
         <div id="expandedInfoCard">
           <h1>{props.title}</h1>

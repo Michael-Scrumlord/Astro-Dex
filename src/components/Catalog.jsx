@@ -46,7 +46,7 @@ export default function Catalog() {
           <Suspense fallback={null}>
             <pointLight position={[-100, 200, 0]} />
             <Model name={planet.name} link={planet.link} />
-            <InfoCard title={planet.name} subtitle={planet.slogan} detail={planet.desc} gravity_cmp={planet.gravity_cmp} image={planet.image} />
+            <InfoCard title={planet.name} subtitle={planet.slogan} detail={planet.desc} gravity_cmp={planet.gravity_cmp} image={planet.image} position={[0, 0, 10]}/>
           </Suspense>
           <Stars />
           <OrbitControls minDistance={7} maxDistance={15} />

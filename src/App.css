@@ -144,9 +144,8 @@ ul {
   opacity: 0.9;
   padding: 20px;
   border-radius: 10px;
-  margin-left: 250px;
-  bottom: 0px;
-  position: relative;
+  margin-left: 100px;
+  overflow-y: auto;
 }
 
 .InfoCard h1, h3, p{
