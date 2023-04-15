@@ -3,8 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import Stars from "./Stars.jsx";
-import "./assets/trivia.css";
-
 // This renders the catalog, side bar and planet 3D object. will need to seperate Sidebar and Planet into 2 components and create a "Catalog View"
 
 export default function Catalog() {
@@ -41,8 +39,8 @@ export default function Catalog() {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title"> Card Title</h5>
-                <p className="card-text"> some text here</p>
+                <h5 className="card-title"> Test Quiz</h5>
+                <p className="card-text"> One Question at a time</p>
                 <a href="/QuizTest" className="btn btn-primary">
                   <Link to="/QuizTest" /> Select!
                 </a>

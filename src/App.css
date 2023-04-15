@@ -4,19 +4,19 @@ body {
 }
 
 ul {
-  padding: 0; 
+  padding: 0;
 }
 .HomeView {
   height: 900px;
   width: 100%;
 }
 
-.NavBar{
+.NavBar {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.navTitle{
+.navTitle {
   font-size: 30px;
 }
 
@@ -113,14 +113,14 @@ ul {
 }
 
 .SearchBar {
-    margin-top: 5px;
-    margin-bottom: 25px;
-    height: 45px;
-    width: 100%;
-    display: flex;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  height: 45px;
+  width: 100%;
+  display: flex;
 }
 
-.SearchBar  .Input {
+.SearchBar .Input {
   height: 100%;
   width: 100%;
   border: 0;
@@ -133,7 +133,7 @@ ul {
   font-weight: bold;
 }
 
-.Sources{
+.Sources {
   color: white;
 }
 /* boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)" */
@@ -146,129 +146,150 @@ ul {
   border-radius: 10px;
   margin-left: 100px;
   overflow-y: auto;
+  height: 100%;
 }
 
-.InfoCard h1, h3, p{
+.InfoCard h1,
+h3,
+p {
   color: white;
   user-select: none;
 }
-  .CardTitle {
-    z-index: 2;
-    position: relative;
-    margin: 12px 0 4px 0;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 2;
-    color: #18181B;
-  }
+.CardTitle {
+  z-index: 2;
+  position: relative;
+  margin: 12px 0 4px 0;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  color: #18181b;
+}
 
-  .CardDetails {
-    z-index: 2;
-    position: relative;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #52525B;
-  }
+.CardDetails {
+  z-index: 2;
+  position: relative;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #52525b;
+}
 
-  .shine {
-    border-radius: inherit;
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity .5s;
-  }
+.shine {
+  border-radius: inherit;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 
-  .CardBackground {
-    border-radius: inherit;
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    -webkit-mask-image: radial-gradient(circle at 60% 5%, black 0%, black 15%, transparent 60%);
-    mask-image: radial-gradient(circle at 60% 5%, black 0%, black 15%, transparent 60%);
-  }
+.CardBackground {
+  border-radius: inherit;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(
+    circle at 60% 5%,
+    black 0%,
+    black 15%,
+    transparent 60%
+  );
+  mask-image: radial-gradient(
+    circle at 60% 5%,
+    black 0%,
+    black 15%,
+    transparent 60%
+  );
+}
 
-  .planetImage {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /*Animating the collapsible stuff */
+.planetImage {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Animating the collapsible stuff */
 
-    .InfoCardMinimize {
-      width: 70px;
-      height: 70px;
-    }
+.InfoCardMinimize {
+  width: 70px;
+  height: 70px;
+}
 
-    .InfoCardMaximize, .InfoCardMinimize {
-      color: #ecf0f1;
-      background: black;
-      border: 0;
-      font-size: 1.5em;
-      position: relative;
-      margin-left: 500px;
-      display: inline-block;
-    }
+.InfoCardMaximize,
+.InfoCardMinimize {
+  border-radius: 100%;
+  color: #ecf0f1;
+  background: black;
+  border: 0;
+  font-size: 1.5em;
+  position: relative;
+  margin-left: 500px;
+  display: inline-block;
+}
 
-    .InfoCardMaximize span, .InfoCardMinimize span {
-      position: absolute;
-      transition: 300ms;
-      background: white;
-      border-radius: 2px;
-    }
+.InfoCardMaximize span,
+.InfoCardMinimize span {
+  position: absolute;
+  transition: 300ms;
+  background: white;
+  border-radius: 2px;
+}
 
-    .InfoCardMaximize span:first-child {
-      left: 25%;
-      right: 25%;
-      height: 10%;
-      top: 45%;
-    }
-    .InfoCardMaximize span:last-child {
-      left: 50%;
-      right: 50%;
-    }
-    .InfoCardMaximize:hover span:last-child {
-      top: 25%;
-      bottom: 25%;
-      width: 10%;
-      left: 45%;
-    }
+.InfoCardMaximize span:first-child {
+  left: 25%;
+  right: 25%;
+  height: 10%;
+  top: 45%;
+}
+.InfoCardMaximize span:last-child {
+  left: 50%;
+  right: 50%;
+}
+.InfoCardMaximize:hover span:last-child {
+  top: 25%;
+  bottom: 25%;
+  width: 10%;
+  left: 45%;
+}
 
-    .InfoCardMinimize span:first-child {
-      top: 25%;
-      bottom: 25%;
-      width: 10%;
-      left: 45%;
-    }
-    .InfoCardMinimize span:last-child {
-      left: 25%;
-      right: 25%;
-      height: 10%;
-      top: 45%;
-    }
+.InfoCardMinimize span:first-child {
+  top: 25%;
+  bottom: 25%;
+  width: 10%;
+  left: 45%;
+}
+.InfoCardMinimize span:last-child {
+  left: 25%;
+  right: 25%;
+  height: 10%;
+  top: 45%;
+}
 
-    .InfoCardMinimize:hover span, .InfoCardMaximize:hover span {
-      transform: rotate(90deg);
-    }
+.InfoCardMinimize:hover span,
+.InfoCardMaximize:hover span {
+  transform: rotate(90deg);
+}
 
-    .InfoCardMinimize:hover span:last-child {
-      left: 50%;
-      right: 50%;
-    }
+.InfoCardMinimize:hover span:last-child {
+  left: 50%;
+  right: 50%;
+}
 
-    .expandedInfoCard {
-      height: 100%;
-      width: 100%;
-    }
+.expandedInfoCard {
+  height: 100%;
+  width: 100%;
+}
 
-    .InfoCardMaximize {
-      display:none;
-      margin-right: 5px;
-      width: 50px;
-      height: 50px;
-    }
+.InfoCardMaximize {
+  display: none;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+}
 
-
+.InfoCard-Container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}

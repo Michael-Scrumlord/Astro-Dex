@@ -13,7 +13,8 @@ window.onload = function() {
         "Jupiter",
         "Uranus",
         "Saturn",
-        0,
+        "All of 4 have rings bozo",
+        4,
       ],
 
       "Which of the following is is not in the inner belt? ": [
