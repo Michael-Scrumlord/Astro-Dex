@@ -37,6 +37,10 @@ export default function Nav() {
             <Link to="/Sources" />
             Sources
           </a>
+          <a className="nav-item nav-link" href="/Login">
+            <Link to="/Login" />
+            Login
+          </a>
         </div>
       </div>
     </nav>
