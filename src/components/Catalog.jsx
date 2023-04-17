@@ -55,7 +55,7 @@ export default function Catalog() {
         <Canvas
           camera={{
             fov: 10,
-            zoom: 0.08,
+            zoom: 0.05,
             near: 1,
             far: 1000,
             position: [-6, 0, 0],

@@ -27,19 +27,27 @@ export default function Sources() {
       >
         <Stars rotate="on" />
       </Canvas>
-
+      <div className="MainContainer">
+        <div className="MainHeader">
+          <h1>More Info</h1>
+          <hr />
+        </div>
       <div className="layout">
-        <h1>More Info</h1>
-        <hr />
-
         {/* SOURCING CODING & MODEL RESOURCES */}
-        <h2>Utilities/Components</h2>
-        <table className="util-table">
-          <tr className="util-row">
-            <th>Library</th>
-            <th>Components Used</th>
-            <th>Documentation</th>
-          </tr>
+        <h3>Utilities/Components</h3>
+        <div className="TableHeader">
+          <table cellPadding="0" cellSpacing="0" border="0">
+            <thead>
+              <tr >
+                <th>Library</th>
+                <th>Components Used</th>
+                <th>Documentation</th>
+              </tr>
+            </thead>
+            </table >
+        </div >
+        <div className="TableContent">
+        <table>
           <tr>
             <td>NASA Resources</td>
             <td>Planet Models</td>
@@ -78,10 +86,12 @@ export default function Sources() {
             </td>
           </tr>
         </table>
-        <hr />
+        </div>
+        </div>
 
         {/* DEV TEAM SECTION */}
-        <h2>Dev Team</h2>
+        <div className="DevInfo">
+        <h3>Dev Team</h3>
         <div className=" dev-team row container-fluid">
           <div className="dev col-lg-4 col-md-6">
             <img
@@ -89,9 +99,9 @@ export default function Sources() {
               src={require("./assets/Stock-Profile.jpeg")}
               alt="default-pfp"
             />
-            <h3>Alejandro Guerrero</h3>
+            <h2>Alejandro Guerrero</h2>
             <ul>
-              <li>Project Owner</li>
+              <li className="DevTitle">Project Owner</li>
               <li>EmailHere@whatever.com</li>
             </ul>
           </div>
@@ -103,7 +113,7 @@ export default function Sources() {
             />
             <h2>Michael Daza</h2>
             <ul>
-              <li>Scrum Master</li>
+              <li className="DevTitle">Scrum Master</li>
               <li>EmailHere@whatever.com</li>
             </ul>
           </div>
@@ -115,7 +125,7 @@ export default function Sources() {
             />
             <h2>Jesus Castillo</h2>
             <ul>
-              <li>Tech Lead</li>
+              <li className="DevTitle">Tech Lead</li>
               <li>EmailHere@whatever.com</li>
             </ul>
           </div>
@@ -127,7 +137,7 @@ export default function Sources() {
             />
             <h2>Ali Omrani</h2>
             <ul>
-              <li>Engineer</li>
+              <li className="DevTitle">Engineer</li>
               <li>EmailHere@whatever.com</li>
             </ul>
           </div>
@@ -139,12 +149,13 @@ export default function Sources() {
             />
             <h2>Dylan Martin</h2>
             <ul>
-              <li>Engineer</li>
+              <li className="DevTitle">Engineer</li>
               <li>EmailHere@whatever.com</li>
             </ul>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
     </div>
   );
 }
