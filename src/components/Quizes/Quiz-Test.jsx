@@ -30,8 +30,10 @@ export default function QuizTest() {
       <div id="quiz">
         <h1>Trivia Quiz</h1>
 
-        <p className="questions"></p>
-        <div className="answers"></div>
+        <div id="quiz-inner">
+          <p className="questions"></p>
+          <div className="answers"></div>
+        </div>
         <div className="checkAnswers">
           <h3>Correct?</h3>
           <div className="checker"></div>

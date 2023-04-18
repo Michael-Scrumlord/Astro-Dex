@@ -296,7 +296,7 @@ p {
   bottom: 0;
 }
 
-.FormContainer{
+.FormContainer {
   text-align: center;
   color: #c0c0c0;
   display: flex;
@@ -349,27 +349,26 @@ p {
   padding: 0.9rem 0.7rem;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   font-size: 17px;
-  color: #4A4A4A;
-
+  color: #4a4a4a;
 }
 
 .FormButton {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0.9rem 2.5rem;
-    text-align: center;
-    background-color: #526a52;
-    color: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    font-size: 17px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #526a52;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.FormError{
-  color: rgb(233, 81, 81)
+.FormError {
+  color: rgb(233, 81, 81);
 }

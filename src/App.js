@@ -8,6 +8,7 @@ import Trivia from "./components/Trivia";
 import QuizTest from "./components/Quizes/Quiz-Test";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Quiz from "./components/Quizes/QuizTwo.jsx";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <Route path="/Sources" element={<Sources />} />
         <Route path="/Trivia" element={<Trivia />} />
         <Route path="/QuizTest" element={<QuizTest />} />
-        <Route path="/Login" element={<Login/>} />
-        <Route path="/Signup" element={<Signup/>} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Quiz" element={<Quiz />} />
       </Routes>
     </div>
   );
