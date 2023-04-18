@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Stars from "../Stars.jsx";
 import { Canvas } from "@react-three/fiber";
 import { useNavigate } from "react-router-dom";
+import { Questions } from "./Questions.js";
 import "./QuizTwo.css";
 
 export default function Quiz() {
@@ -10,66 +11,13 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const questions = [
-    {
-      text: "What is the biggest planet in our solar system?",
-      options: [
-        { id: 0, text: "Saturn", isCorrect: false },
-        { id: 1, text: "Jupiter", isCorrect: true },
-        { id: 2, text: "Uranus", isCorrect: false },
-        { id: 3, text: "Neptune", isCorrect: false },
-      ],
-    },
-    {
-      text: "Which planet does not have rings?",
-      options: [
-        { id: 0, text: "Saturn", isCorrect: false },
-        { id: 1, text: "Jupiter", isCorrect: false },
-        { id: 2, text: "Uranus", isCorrect: false },
-        { id: 3, text: "Neptune", isCorrect: false },
-        {
-          id: 4,
-          text: "All of these have rings (technically)",
-          isCorrect: true,
-        },
-      ],
-    },
-
-    {
-      text: "Which planet is closest to the sun?",
-      options: [
-        { id: 0, text: "Mercury", isCorrect: true },
-        { id: 1, text: "Venus", isCorrect: false },
-        { id: 2, text: "Earth", isCorrect: false },
-        { id: 3, text: "Mars", isCorrect: false },
-      ],
-    },
-    {
-      text: "[LIGHTNING ROUND] Which criteria for a full-sized planet does pluto fail?",
-      options: [
-        { id: 0, text: "It is in orbit around The Sun", isCorrect: false },
-
-        {
-          id: 1,
-          text: "It has sufficient mass to assume hydrostatic equilibrium (a nearly round shape)",
-          isCorrect: false,
-        },
-        {
-          id: 2,
-          text: "It has 'cleared the neighborhood' around its orbit",
-          isCorrect: true,
-        },
-      ],
-    },
-  ];
-
   //Helper Function
   const optionClicked = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
     }
 
-    if (currentQuestion + 1 < questions.length) {
+    if (currentQuestion + 1 < Questions.length) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setFinalResults(true);
@@ -116,24 +64,26 @@ export default function Quiz() {
         {showFinalResults ? (
           /*4. Final Results*/
           <div className="final-results">
-            <h1>Final Results</h1>
+            <h1>Final Results!</h1>
             <h2>
-              {score} out of {questions.length} correct - (
-              {((score / questions.length) * 100).toFixed(0)}%)
+              {score} out of {Questions.length} correct - (
+              {((score / Questions.length) * 100).toFixed(0)}%)
             </h2>
             <button onClick={() => restartQuiz()}>Restart Quiz</button>
-            <button onClick={triviaSelection}>Trivia Selection</button>
+            <button id="TriviaSelect" onClick={triviaSelection}>
+              Trivia Selection
+            </button>
           </div>
         ) : (
           /* 3. Questions */
           <div className="question-card">
             <h2>
-              Question {currentQuestion + 1} out of {questions.length}
+              Question {currentQuestion + 1} out of {Questions.length}
             </h2>
-            <h3 className="question-text">{questions[currentQuestion].text}</h3>
+            <h3 className="question-text">{Questions[currentQuestion].text}</h3>
 
             <ul>
-              {questions[currentQuestion].options.map((option) => {
+              {Questions[currentQuestion].options.map((option) => {
                 return (
                   <li
                     onClick={() => optionClicked(option.isCorrect)}

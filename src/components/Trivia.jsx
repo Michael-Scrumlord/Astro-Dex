@@ -33,7 +33,7 @@ export default function Catalog() {
           <div className="col col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card" style={{ width: "18rem" }}>
               <img
-                src={require("./assets/rocket.png")}
+                src={require("./assets/SolarSystem.png")}
                 className="card-img-top"
                 alt="..."
               />
