@@ -62,7 +62,7 @@ export default function Sources() {
                   <td>React</td>
                   <td>UI-Creation, Routing</td>
                   <td>
-                    <a href="https://react.dev/"></a>
+                    <a href="https://react.dev/">More Info</a>
                   </td>
                 </tr>
                 <tr>
