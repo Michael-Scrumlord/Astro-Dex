@@ -29,7 +29,7 @@ export default function Catalog() {
       </Canvas>
       <h1 className="title-label">ASTROTRIVIA</h1>
       <div id="overlay">
-        <div className="row container-fluidi">
+        <div className="row container-fluid">
           <div className="col col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card" style={{ width: "18rem" }}>
               <img
