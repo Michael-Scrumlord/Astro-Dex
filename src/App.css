@@ -2,7 +2,7 @@ body {
   width: 100%;
   background-color: #000000;
   font-family: "Ubuntu", sans-serif;
-  overflow: hidden;
+  overflow: auto;
 }
 
 ul {
@@ -75,7 +75,7 @@ ul {
 .Sidebar {
   position: absolute;
   z-index: 9;
-  height: 70%;
+  height: auto;
   width: 200px;
   margin: 15px;
   flex: left;

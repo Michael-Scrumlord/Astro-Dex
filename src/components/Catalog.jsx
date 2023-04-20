@@ -61,11 +61,10 @@ export default function Catalog() {
             position: [-6, 0, 0],
           }}
           style={{
-            position: "absolute",
+            position: "fixed",
             backgroundColor: "#1b1b1c",
             height: "93.74%", //Just to offset the height of the navbar (40px)
             width: "100%",
-            borderRadius: "10px",
           }}
         >
           <Suspense fallback={null}>
