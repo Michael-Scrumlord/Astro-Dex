@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import Stars from "../Stars.jsx";
 import { Canvas } from "@react-three/fiber";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Questions } from "./Questions.js";
 import "./QuizTwo.css";
 
 export default function Quiz() {
+  const { state } = useLocation();
+
   //properties
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(state.index_start);
+  const [questionCount, setQuestionCount] = useState(1);
+  const totalQuestions = state.index_end - state.index_start + 1;
 
   //Helper Function
   const optionClicked = (isCorrect) => {
@@ -17,7 +21,8 @@ export default function Quiz() {
       setScore(score + 1);
     }
 
-    if (currentQuestion + 1 < Questions.length) {
+    if (currentQuestion < state.index_end) {
+      setQuestionCount(questionCount + 1);
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setFinalResults(true);
@@ -26,8 +31,9 @@ export default function Quiz() {
 
   const restartQuiz = () => {
     setScore(0);
-    setCurrentQuestion(0);
+    setCurrentQuestion(state.index_start);
     setFinalResults(false);
+    setQuestionCount(1);
   };
 
   let navigate = useNavigate();
@@ -59,15 +65,15 @@ export default function Quiz() {
 
       <div className="quiz-wrapper">
         {/* 1. Header*/}
-        <h1>OUR SOLAR SYSTEM</h1>
+        <h1>{state.title}</h1>
 
         {showFinalResults ? (
           /*4. Final Results*/
           <div className="final-results">
             <h1>Final Results!</h1>
             <h2>
-              {score} out of {Questions.length} correct - (
-              {((score / Questions.length) * 100).toFixed(0)}%)
+              {score} out of {totalQuestions} correct - (
+              {((score / totalQuestions) * 100).toFixed(0)}%)
             </h2>
             <button onClick={() => restartQuiz()}>Restart Quiz</button>
             <button id="TriviaSelect" onClick={triviaSelection}>
@@ -78,7 +84,7 @@ export default function Quiz() {
           /* 3. Questions */
           <div className="question-card">
             <h2>
-              Question {currentQuestion + 1} out of {Questions.length}
+              Question {questionCount} out of {totalQuestions}
             </h2>
             <h3 className="question-text">{Questions[currentQuestion].text}</h3>
 

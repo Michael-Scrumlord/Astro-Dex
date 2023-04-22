@@ -6,10 +6,9 @@
 .title-label {
   position: relative;
   margin-bottom: 50px;
-  padding: 0;
+  padding-top: 50px;
   font-size: 5rem;
   letter-spacing: -0.05em;
-
   background: linear-gradient(20deg, #113989, #ffe853);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,10 +21,15 @@
 .card {
   border: 1px solid;
   background-color: #111112;
+  margin: 20px;
 }
 
 .card-body {
   background-color: #111112;
   border-radius: 10px;
   opacity: 0.8;
+}
+
+.column {
+  margin: auto;
 }

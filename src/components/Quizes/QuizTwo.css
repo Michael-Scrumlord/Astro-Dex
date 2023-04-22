@@ -1,6 +1,9 @@
+.QuizContainer {
+  min-height: auto;
+}
 .quiz-wrapper {
-  position: fixed;
-  top: 20%;
+  position: relative;
+  transform: translateY(20%);
   width: 100%;
   text-align: center;
 }

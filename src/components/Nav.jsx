@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 export default function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark navig sticky-top NavBar">
-      <a className="navbar-brand navTitle" href="#">
-        ASTRO DEX
+      <a className="navbar-brand navTitle" href="/">
+        <Link to="/" />
+        ASTRODEX
       </a>
       <button
         className="navbar-toggler"
