@@ -1,9 +1,28 @@
-import React from "react";
+import { useEffect } from "react";
+import {React, useState} from "react";
 import { Link } from "react-router-dom";
+import httpClient from "../httpClient";
+import UserProfile from "./UserProfile";
 // Navigation Bar - using bootstrap
 
-export default function Nav() {
+export default function Nav({loggedIn, username}) {
+  const [showUser, setShowUser] = useState(false)
+
+
+  console.log(username)
+  const handleClick = (event) => {
+    event.preventDefault()
+    if(showUser){
+      setShowUser(false);
+    } else{
+      if (loggedIn){
+        setShowUser(true);
+      }
+    }
+  }
+
   return (
+    <div>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark navig sticky-top NavBar">
       <a className="navbar-brand navTitle" href="/">
         <Link to="/" />
@@ -38,12 +57,18 @@ export default function Nav() {
             <Link to="/Sources" />
             Sources
           </a>
-          <a className="nav-item nav-link" href="/Login">
+          {loggedIn ? 
+          (<a className="nav-item nav-link" href="/" onClick={handleClick}>
+          {username}
+          </a>) :
+          (<a className="nav-item nav-link" href="/Login">
             <Link to="/Login" />
             Login
-          </a>
+          </a>)}
         </div>
       </div>
     </nav>
+    {showUser && <UserProfile username={username}/>}
+    </div>
   );
 }

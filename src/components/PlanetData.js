@@ -145,5 +145,21 @@ export const PlanetData = [
         surface_g: "8.87",
         surface_g_comp: "If you weigh 100 pounds on Earth, you would weigh 91 pounds on Venus.",
         image: "Venus.jpg"
+    },
+    {
+        title: "Michael",
+        link: "/",
+        Description: "Michael is an exceptional leader who consistently demonstrates his ability to lead by example. His leadership style is inclusive, collaborative, and focused on achieving results while ensuring the well-being of his team members. Michael's strategic vision and ability to communicate it effectively have been instrumental in the success of our organization. He is a skilled problem solver who is always willing to lend his expertise to help others overcome challenges. Michael's dedication to his team's professional development and growth is inspiring and has resulted in high levels of engagement and retention among team members.",
+        small_desc: "Michael is an exceptional leader who consistently demonstrates his ability to lead by example. His leadership style is inclusive, collaborative, and focused on achieving results while ensuring the well-being of his team members. Michael's strategic vision and ability to communicate it effectively have been instrumental in the success of our organization. He is a skilled problem solver who is always willing to lend his expertise to help others overcome challenges. Michael's dedication to his team's professional development and growth is inspiring and has resulted in high levels of engagement and retention among team members.",
+        slogan: "The Legendary Scrum Master",
+        orbit_dist: "108,209,475",
+        orbit_dist_au: "7.2333566 x 10<SUP>-1</SUP>",
+        radius: "6,051.8",
+        mass: "4,867,320,000,000,000,000,000,000",
+        density: "5.243",
+        volume: "928,415,345,893",
+        surface_g: "8.87",
+        surface_g_comp: "You will be missed...",
+        image: ""
     }
 ];

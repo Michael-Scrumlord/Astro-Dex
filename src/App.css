@@ -17,7 +17,14 @@ ul {
 }
 
 .navTitle {
-  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+
+  background: linear-gradient(60deg, #113989, #ffe853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .HomeViewText {
@@ -316,7 +323,7 @@ p {
 .FormField {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -345,7 +352,7 @@ p {
   background-color: #fff;
   border-radius: 4px;
   border: none;
-  display: block;
+  display: inlinep;
   padding: 0.9rem 0.7rem;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   font-size: 17px;

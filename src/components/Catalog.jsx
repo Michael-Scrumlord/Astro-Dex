@@ -1,5 +1,5 @@
 import React, { Suspense, useState } from "react";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Text } from "@react-three/drei";
 import { Model } from "./Model";
 import { Canvas } from "@react-three/fiber";
 import Stars from "./Stars.jsx";
@@ -69,7 +69,21 @@ export default function Catalog() {
         >
           <Suspense fallback={null}>
             <pointLight position={[-100, 200, 0]} />
-            <Model name={planet.name} link={planet.link} />
+            {planet.name == 'Michael' ? <Text
+              position={[0, 0, -10]}
+              rotation={[0, -1, 0]}
+              color="white"
+              fontSize={50}
+              maxWidth={300}
+              lineHeight={1}
+              scale={0.09}
+              letterSpacing={-0.05}
+              textAlign="center"
+              anchorX="middle"
+              anchorY="middle"
+              >
+                Michael
+              </Text> : <Model name={planet.name} link={planet.link} />}
           </Suspense>
           <Stars />
           <OrbitControls minDistance={7} maxDistance={15} />
