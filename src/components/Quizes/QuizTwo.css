@@ -1,9 +1,9 @@
 .QuizContainer {
-  min-height: auto;
+  min-height: 100%;
 }
 .quiz-wrapper {
   position: relative;
-  transform: translateY(20%);
+  transform: translateY(30%);
   width: 100%;
   text-align: center;
 }
@@ -33,7 +33,7 @@
   margin: 0 auto;
 
   /* Dimensions  */
-  width: 80%; /* Can be in percentage also. */
+  width: 60%; /* Can be in percentage also. */
   height: auto;
 
   /* Visual  */
@@ -84,7 +84,7 @@
   margin: 0 auto;
 
   /* Dimensions  */
-  width: 80%; /* Can be in percentage also. */
+  width: 60%; /* Can be in percentage also. */
   height: auto;
 
   /* Visual  */
@@ -99,7 +99,8 @@
 }
 
 .quiz-wrapper button {
-  background-color: red; /* Green */
+  background-color: #113989; /* Green */
+  margin: 10px;
   border: 1px solid;
   color: white;
   padding: 16px 24px;
@@ -113,5 +114,6 @@
 }
 
 #TriviaSelect {
-  background-color: blue;
+  background-color: #ffe853;
+  color: black;
 }

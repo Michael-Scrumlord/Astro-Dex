@@ -16,11 +16,10 @@ export default function Quiz() {
   const totalQuestions = state.index_end - state.index_start + 1;
 
   //Helper Function
-  const optionClicked = (isCorrect) => {
-    if (isCorrect) {
+  const optionClicked = (option) => {
+    if (option.isCorrect) {
       setScore(score + 1);
     }
-
     if (currentQuestion < state.index_end) {
       setQuestionCount(questionCount + 1);
       setCurrentQuestion(currentQuestion + 1);
@@ -91,20 +90,17 @@ export default function Quiz() {
             <ul>
               {Questions[currentQuestion].options.map((option) => {
                 return (
-                  <li
-                    onClick={() => optionClicked(option.isCorrect)}
-                    key={option.id}
-                  >
+                  <li onClick={() => optionClicked(option)} key={option.id}>
                     {option.text}
                   </li>
                 );
               })}
             </ul>
+            <h2>Current Score: {score}</h2>
           </div>
         )}
 
         {/* 2. Current Score*/}
-        <h2>Current Score: {score}</h2>
       </div>
     </div>
   );

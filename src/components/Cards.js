@@ -16,6 +16,14 @@ export const Cards = [
     text: "Test your knowledge on the Cosmos and everything within it!",
     type: "Medium",
     index_start: 5,
-    index_end: 7,
+    index_end: 8,
+  },
+  {
+    title: "Science Theory",
+    image: require("./assets/SolarSystem.png"),
+    text: "Think your smart enough to handle these? Test your scientific knowledge with this quiz!",
+    type: "hard",
+    index_start: 9,
+    index_end: 12,
   },
 ];
